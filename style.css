@@ -1,14 +1,9 @@
-/* What do you have to be scared of?
- *
- * Lorin Tackett, July 2013
- * http://lorintackett.com 
- */
-@import url(https://fonts.googleapis.com/css?family=Oswald);
 @keyframes clouds-loop-1 {
   to {
     background-position: -1000px 0;
   }
 }
+
 .clouds-1 {
   background-image: url("img/clouds_2.webp");
   animation: clouds-loop-1 20s infinite linear;
@@ -19,6 +14,7 @@
     background-position: -1000px 0;
   }
 }
+
 .clouds-2 {
   background-image: url("img/clouds_1.webp");
   animation: clouds-loop-2 15s infinite linear;
@@ -29,16 +25,20 @@
     background-position: -1579px 0;
   }
 }
+
 .clouds-3 {
   background-image: url("img/clouds_3.webp");
   animation: clouds-loop-3 17s infinite linear;
 }
 
-html, body {
-  font-family: 'Oswald', sans-serif;
+html,
+body {
+  font-family: "Roboto";
   height: 100%;
   padding: 0;
   margin: 0;
+  color: white;
+  overflow: hidden;
 }
 
 body {
@@ -50,6 +50,7 @@ body {
   text-align: center;
   vertical-align: middle;
 }
+
 body a {
   display: inline-block;
   vertical-align: middle;
@@ -66,6 +67,7 @@ body a {
   color: #b8956b;
   text-shadow: 0 -1px 0 rgba(250, 248, 245, 0.6), 0 2px 3px #000;
 }
+
 body a span {
   display: block;
 }
@@ -91,4 +93,23 @@ body a span {
   right: 0;
   left: 0;
   height: 500px;
+}
+
+body {
+  font-family: "Roboto";
+  color: white;
+  overflow: hidden;
+}
+
+#clock {
+  font-weight: 300;
+  font-size: 120px;
+}
+
+.center {
+  width: 100wh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
